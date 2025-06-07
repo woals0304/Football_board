@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>선수 평가</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="/static/script.js"></script>
+</head>
+<body>
+    <!-- 네비게이션 -->
+    <nav>
+        <a href="/">홈</a> |
+        <a href="javascript:history.back()">이전</a>
+    </nav>
+
+    <h1>선수 평가 작성</h1>
+    <div id="playerInfo">
+        <h2 id="playerName"></h2>
+    </div>
+    <img src="/static/player.png" alt="선수 이미지">
+    <form id="evalForm">
+        <div id="averageRating">
+            <strong>평균 평점: </strong>
+            <span id="avgRatingText">아직 평가가 없습니다.</span>
+        </div>
+        <label>평점:
+            <select id="ratingSelect"></select>
+        </label><br><br>
+        <label>댓글:<br>
+            <textarea id="commentInput" required rows="4" cols="50"></textarea>
+        </label><br><br>
+        <button type="submit">등록</button>
+    </form>
+
+    <h2>작성된 평가</h2>
+    <table border="1" id="evalTable">
+        <thead>
+            <tr>
+                <th>평점</th>
+                <th>댓글</th>
+                <th>작성 시간</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- JS로 채움 -->
+        </tbody>
+    </table>
+</body>
+</html>

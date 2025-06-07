@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>축구선수 평가</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="/static/script.js"></script>
+</head>
+<body>
+    <!-- 네비게이션 -->
+    <nav>
+        <a href="/">홈</a>
+    </nav>
+
+    <section>
+        <h1>리그와 팀 선택</h1>
+        <form id="searchForm">
+            <label>리그:
+                <select id="leagueSelect"></select>
+            </label><br><br>
+            <label>팀:
+                <select id="teamSelect"></select>
+            </label><br><br>
+            <button type="submit">선수 목록 보기</button>
+        </form>
+    </section>
+
+    <!-- 전체 보기 테이블 -->
+    <article>
+        <h2>전체 글</h2>
+        <table border="1" id="allPostsTable">
+            <thead>
+                <tr>
+                    <th>팀</th>
+                    <th>선수</th>
+                    <th>평점</th>
+                    <th>내용</th>
+                    <th>작성일</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- JS로 채움 -->
+            </tbody>
+        </table>
+    </article>
+</body>
+</html>
