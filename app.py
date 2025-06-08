@@ -163,10 +163,9 @@ def api_create_post():
     return jsonify({"success": True}), 201
 
 # --------------------------
-# [3] (선택) 기존 평가 HTML 렌더링 라우트 (evaluate/players)
+# Static HTML rendering only
 # --------------------------
-# 기존 페이지에서 jinja 템플릿 쓰는 경우, 필요하면 남겨둬도 됨.  
-# JS 기반으로만 쓸 거면 생략해도 무방.
+# This project serves prebuilt HTML files and does not use Jinja routes.
 
 if __name__ == '__main__':
     app.run(debug=True)
