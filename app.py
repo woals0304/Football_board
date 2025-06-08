@@ -162,10 +162,5 @@ def api_create_post():
     conn.close()
     return jsonify({"success": True}), 201
 
-# --------------------------
-# Static HTML rendering only
-# --------------------------
-# This project serves prebuilt HTML files and does not use Jinja routes.
-
 if __name__ == '__main__':
     app.run(debug=True)
